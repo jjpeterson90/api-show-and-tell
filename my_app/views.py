@@ -1,7 +1,13 @@
 from django.shortcuts import render
 import requests, json
 
-# Create your views here.
+## This is a partial solution in that it doesn't meet the assignment requirements 'exactly'
+# Used gfycat's API, which required you to sign up to receive a client id & secret by email (removed for security)
+
+# Solution works with a given client id & secret.
+# Uses Auth2.0
+# Uses client id & secret to request a Token, which is then used to request the data.
+
 def index(request):
     
     test_api_url = "https://api.gfycat.com/v1/gfycats/meeksadannashummingbird"
